@@ -12,10 +12,22 @@ function App() {
       mode: darkMode ? "light" : "dark",
     },
   });
+  // useEffect(() => {
+  //   document.body.style.backgroundColor;
+  // }, [darkMode]);
 
   return (
     <ThemeProvider theme={theme}>
-      <Paper style={{ transition: "1s" }}>
+      <Paper
+        elevation="0"
+        style={{
+          transition: "1s",
+          width: "100%",
+          height: "100%",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
         <Main setDarkMode={setDarkMode} darkMode={darkMode} />
       </Paper>
     </ThemeProvider>

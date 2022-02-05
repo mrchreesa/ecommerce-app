@@ -62,16 +62,46 @@ export default function NavBar({
       </div>
       <ThemeProvider theme={theme}>
         <div className="navbar-logo">
-          <img src={logo} alt="navbar logo" />
+          <img
+            className={darkMode ? "navbar-img-light" : "navbar-img-dark"}
+            src={logo}
+            alt="navbar logo"
+          />
         </div>
         <div
           className={sidebarToggle ? "navbar-menu" : "navbar-menu nav-active"}
+          id={darkMode ? "navbar-link-light" : "navbar-link-dark"}
         >
-          <a href="#">Collections</a>
-          <a href="#">Men</a>
-          <a href="#">Women</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+          <a
+            className={darkMode ? "navbar-link-light" : "navbar-link-dark"}
+            href="#"
+          >
+            Collections
+          </a>
+          <a
+            className={darkMode ? "navbar-link-light" : "navbar-link-dark"}
+            href="#"
+          >
+            Men
+          </a>
+          <a
+            className={darkMode ? "navbar-link-light" : "navbar-link-dark"}
+            href="#"
+          >
+            Women
+          </a>
+          <a
+            className={darkMode ? "navbar-link-light" : "navbar-link-dark"}
+            href="#"
+          >
+            About
+          </a>
+          <a
+            className={darkMode ? "navbar-link-light" : "navbar-link-dark"}
+            href="#"
+          >
+            Contact
+          </a>
         </div>
         <div className="navbar-empty-div"></div>
         <Button style={{ marginRight: 10 }} onClick={toggleDarkMode}>
