@@ -6,7 +6,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { Paper } from "@mui/material";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState("light");
   const theme = createTheme({
     palette: {
       mode: darkMode ? "light" : "dark",
