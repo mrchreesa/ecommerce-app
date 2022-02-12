@@ -1,6 +1,6 @@
 import "./App.css";
 import Main from "./components/Main";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { Paper } from "@mui/material";
@@ -12,9 +12,10 @@ function App() {
       mode: darkMode ? "light" : "dark",
     },
   });
-  // useEffect(() => {
-  //   document.body.style.backgroundColor;
-  // }, [darkMode]);
+  useEffect(() => {
+    document.body.style.backgroundColor = darkMode ? "white" : "hsl(0, 0%, 8%)";
+    document.body.style.transition = "all 1s";
+  }, [darkMode]);
 
   return (
     <ThemeProvider theme={theme}>
