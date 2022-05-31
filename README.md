@@ -1,8 +1,6 @@
 <h1 align="center">Welcome to E-commerce page 👋</h1>
 <p>
-  <a href="https://github.com/mrchreesa/ecommerce-app/" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
-  </a>
+
   <a href="https://twitter.com/mrchreesa" target="_blank">
     <img alt="Twitter: mrchreesa" src="https://img.shields.io/twitter/follow/mrchreesa.svg?style=social" />
   </a>
