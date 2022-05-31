@@ -12,7 +12,6 @@
     E-commerce page was build with React, for the design I've used Material UI. It is a simple page showcasing interactive UI, responsive design and Dark and Light theme.
     <br/>
 
-<img align="center" src="./preview three.png" alt="preview page" />
 
 <h1 align="center"> 🏠 (https://e-com.krisrahnev.com/) </h1>
 </br>
